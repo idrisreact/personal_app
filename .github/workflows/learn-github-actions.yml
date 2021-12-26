@@ -10,3 +10,11 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      name: "Testing"
+      with:
+        node-version: '14'
+      run: npm install
+      run: npm run test
