@@ -2,6 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -49,8 +51,12 @@ module.exports = {
         },
       },
     ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['jest.setup.ts', '**/*.test.tsx', '**/*.spec.tsx', '**/*.test.ts', '**/*.spec.ts'] },
+    ],
   },
-  settins: {
+  settings: {
     react: {
       version: 'detect',
     },

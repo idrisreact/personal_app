@@ -27,7 +27,8 @@
     "src/**/*",
     "styles/**/*",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "test/my-custom-enviroment.js"
   ],
   "exclude": ["node_modules", "coverage"]
 }
